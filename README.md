@@ -44,7 +44,7 @@ mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.M
 ```
 #### 3. 传统项目配置方式
 
-[请参考mybatis-page项目的分页拦截器配置说明](https://github.com/monee1988/mybatis-page#1-%E5%88%86%E9%A1%B5%E6%8B%A6%E6%88%AA%E5%99%A8%E9%85%8D%E7%BD%AE)
+[请参考mybatis-page项目的分页拦截器配置说明](<a href="链接" target="_blank">https://github.com/monee1988/mybatis-page#1-%E5%88%86%E9%A1%B5%E6%8B%A6%E6%88%AA%E5%99%A8%E9%85%8D%E7%BD%AE</a>)
 
 
 
