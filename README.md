@@ -1,4 +1,4 @@
-﻿##mybatis-page-spring-boot-starter
+﻿## [mybatis-page-spring-boot-starter](https://github.com/monee1988/mybatis-page-spring-boot-starter)
 
 mybatis-page-spring-boot-starter 是基于[mybais-page](https://github.com/monee1988/mybatis-page) springboot项目自动化分页starter
 
@@ -11,7 +11,7 @@ mybatis-page-spring-boot-starter 是基于[mybais-page](https://github.com/monee
     <version>1.0.0-RELEASE</version>
 </dependency>
 ```
-gradle
+### gradle 坐标 :
 ```
 implementation 'com.github.monee1988:mybatis-page-spring-boot-starter:1.0.0-RELEASE'
 ```
