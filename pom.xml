@@ -6,7 +6,7 @@
 
     <groupId>com.github.monee1988</groupId>
     <artifactId>mybatis-page-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <name>mybatis-page-spring-boot-starter</name>
     <description>mybatis-page-spring-boot-starter</description>
 
@@ -98,7 +98,7 @@
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </licenses>
 
