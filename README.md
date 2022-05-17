@@ -8,12 +8,12 @@ mybatis-page-spring-boot-starter 是基于[mybais-page](https://github.com/monee
 <dependency>
     <groupId>com.github.monee1988</groupId>
     <artifactId>mybatis-page-spring-boot-starter</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
 </dependency>
 ```
 ### gradle 坐标 :
 ```
-implementation 'com.github.monee1988:mybatis-page-spring-boot-starter:1.0.0-RELEASE'
+implementation 'com.github.monee1988:mybatis-page-spring-boot-starter:1.0.1-RELEASE'
 ```
 ### 说明
 应用此插件默认开发者是基于springboot的项目开发
