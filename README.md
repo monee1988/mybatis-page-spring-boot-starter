@@ -25,9 +25,9 @@ mybatis:
   mapper-locations: classpath:/mappers/*Mapper.xml
   page-interceptor:
     interceptorEnabled: true     #开启分页
-    dialectClassName: com.github.monee1988.mybatis.dialect.MySqlDialect      #MySqlDialect分页方言
-#   dialectClassName: com.github.monee1988.mybatis.dialect.SqlServerDialect  #SqlServerDialect分页方言
-#   dialectClassName: com.github.monee1988.mybatis.dialect.OracleDialect     #OracleDialect分页方言
+    dialectClassName: com.github.monee1988.mybatis.dialect.support.MySqlDialect      #MySqlDialect分页方言
+#   dialectClassName: com.github.monee1988.mybatis.dialect.support.SqlServerDialect  #SqlServerDialect分页方言
+#   dialectClassName: com.github.monee1988.mybatis.dialect.support.OracleDialect     #OracleDialect分页方言
 ```
 #### 2. properties配置方式
 ```
