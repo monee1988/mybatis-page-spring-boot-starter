@@ -36,11 +36,11 @@ mybatis.mapper-locations=classpath:/mappers/*Mapper.xml
 #开启分页
 mybatis.page-interceptor.interceptorEnabled=true
 #MySqlDialect分页方言
-mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.MySqlDialect
+mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.support.MySqlDialect
 #SqlServerDialect分页方言
-#mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.SqlServerDialect
+#mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.support.SqlServerDialect
 #OracleDialect分页方言
-#mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.OracleDialect
+#mybatis.page-interceptor.dialectClassName=com.github.monee1988.mybatis.dialect.support.OracleDialect
 ```
 #### 3. 传统项目配置方式
 
