@@ -5,7 +5,7 @@
 
     <groupId>com.github.monee1988</groupId>
     <artifactId>mybatis-page-spring-boot-starter</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>mybatis-page-spring-boot-starter</name>
@@ -43,8 +43,8 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <springboot.version>2.6.6</springboot.version>
-        <mybatispage.version>1.0.0-RELEASE</mybatispage.version>
+        <springboot.version>2.6.7</springboot.version>
+        <mybatispage.version>1.0.1-RELEASE</mybatispage.version>
     </properties>
 
     <dependencies>
