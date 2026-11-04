@@ -1,0 +1,4 @@
+# Spring Boot 2.6 及以下版本通过此文件发现自动配置类。
+# Boot 2.7 / 3.x 走 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports。
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.github.monee1988.mybatis.autoconfigure.MybatisPageAutoConfiguration
