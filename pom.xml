@@ -154,11 +154,14 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!-- GPG -->
+                    <!--
+                      GPG 签名。3.x 才支持 pinentry-mode 的 loopback 模式，避免无图形界面时
+                      pinentry 弹窗阻塞。口令由 -Dgpg.passphrase=xxx 传入，不写死在 POM 里。
+                    -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>3.2.0</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -168,6 +171,12 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <gpgArguments>
+                                <arg>--pinentry-mode</arg>
+                                <arg>loopback</arg>
+                            </gpgArguments>
+                        </configuration>
                     </plugin>
                     <!-- Central Portal 发布（替代已关停的 OSSRH） -->
                     <plugin>
