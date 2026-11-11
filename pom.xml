@@ -5,7 +5,7 @@
 
     <groupId>com.github.monee1988</groupId>
     <artifactId>mybatis-page-spring-boot-starter</artifactId>
-    <version>1.1.0-RELEASE</version>
+    <version>1.1.1-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>mybatis-page-spring-boot-starter</name>
@@ -45,7 +45,7 @@
 
         <!-- 编译基线 2.7.18：其 API 是 2.x / 3.x 的交集，同一份字节码两个版本都能加载 -->
         <springboot.version>2.7.18</springboot.version>
-        <mybatispage.version>1.1.0-RELEASE</mybatispage.version>
+        <mybatispage.version>1.1.1-RELEASE</mybatispage.version>
         <mybatis.version>3.5.16</mybatis.version>
         <slf4j.version>1.7.36</slf4j.version>
     </properties>

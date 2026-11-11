@@ -45,11 +45,10 @@ public class MybatisPageAutoConfiguration {
         interceptor.setDialectClassName(dialectClassName);
         interceptor.setCountEnabled(properties.isCountEnabled());
 
-        if (log.isInfoEnabled()) {
-            log.info("mybatis-page 已启用: dialect={}, countEnabled={}",
-                    dialectClassName.substring(dialectClassName.lastIndexOf('.') + 1),
-                    properties.isCountEnabled());
-        }
+        log.info("{}已启用: dialect={}, countEnabled={}",
+                MybatisInterceptor.LOG_PREFIX,
+                dialectClassName.substring(dialectClassName.lastIndexOf('.') + 1),
+                properties.isCountEnabled());
         return interceptor;
     }
 }

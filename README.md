@@ -4,7 +4,7 @@
 
 | 项 | 内容 |
 |---|---|
-| Maven 坐标 | `com.github.monee1988:mybatis-page-spring-boot-starter:1.1.0-RELEASE` |
+| Maven 坐标 | `com.github.monee1988:mybatis-page-spring-boot-starter:1.1.1-RELEASE` |
 | 兼容版本 | Spring Boot 2.x（JDK 8+）与 3.x（JDK 17+） |
 | 许可 | Apache License 2.0 |
 
@@ -14,7 +14,7 @@
 <dependency>
     <groupId>com.github.monee1988</groupId>
     <artifactId>mybatis-page-spring-boot-starter</artifactId>
-    <version>1.1.0-RELEASE</version>
+    <version>1.1.1-RELEASE</version>
 </dependency>
 ```
 
@@ -40,7 +40,7 @@ mybatis-page:
 启动时会输出一行日志，便于确认装配结果：
 
 ```
-mybatis-page 已启用: dialect=MySqlDialect, countEnabled=true
+mybatis-page: 已启用: dialect=MySqlDialect, countEnabled=true
 ```
 
 ## 方言别名
@@ -65,6 +65,8 @@ mybatis-page:
 
 本 starter 依赖 `mybatis-page`（会自动传递），对 `spring-boot-autoconfigure`、`mybatis`、`slf4j-api` 均为 `provided`，不会把版本强加给使用方。
 
+其中只有 starter 自身用 `slf4j`——Spring Boot 应用必然带 slf4j（`spring-boot-starter-logging`），这是 starter 的惯例。**`mybatis-page` 核心库本身不依赖任何日志框架**，日志跟随 MyBatis `logImpl` 自动探测，纯 MyBatis 项目即使没有 slf4j 也能正常运行。
+
 ## 关闭自动配置
 
 只想在部分环境启用时，除了 `mybatis-page.enabled=false`，也可以按标准方式排除：
@@ -75,9 +77,11 @@ mybatis-page:
 
 ## 常见问题
 
-**分页没生效**：确认 `mybatis-page.enabled` 未被设为 `false`；确认查询参数里能取到 `Page` 对象（字段名必须叫 `page`）；把 `logging.level.com.github.monee1988.mybatis` 设为 `debug` 后应能看到 `mybatis-page 分页:` 日志。
+**分页没生效**：确认 `mybatis-page.enabled` 未被设为 `false`；确认查询参数里能取到 `Page` 对象（字段名必须叫 `page`）；把 `logging.level.com.github.monee1988.mybatis` 设为 `debug` 后应能看到 `mybatis-page: 分页` 日志。
 
-**Boot 3 启动报 `javax.servlet` 相关错误**：说明用的还是 1.0.x 的 `mybatis-page`，升级到 1.1.0-RELEASE。
+**Boot 3 启动报 `javax.servlet` 相关错误**：说明用的还是 1.0.x 的 `mybatis-page`，升级到 1.1.1-RELEASE。
+
+**日志里出现 `mybatis-page: 参数 X 中未找到 page 对象`**：说明该查询的参数是 Map 或实体 Bean 但没有 `page` 属性，插件按普通查询执行了。这是提示不是错误，同类参数只会提示一次；如果该查询本来就不需要分页，忽略即可。
 
 ## 许可
 
